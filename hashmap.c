@@ -53,6 +53,7 @@ do
 {
   if (map->buckets[i] == NULL){
     map->buckets[i] = uwu;
+    map->size++;
     break;
   }
   else 
