@@ -61,7 +61,7 @@ HashMap * createMap(long capacity) {
   mappsi->buckets = (Pair **) calloc(capacity, sizeof(Pair *));
   mappsi-> capacity = capacity;
   mappsi-> current = -1;
-    return NULL;
+return mappsi;
 }
 
 void eraseMap(HashMap * map,  char * key) {    
