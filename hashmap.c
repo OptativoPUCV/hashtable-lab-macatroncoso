@@ -55,6 +55,9 @@ for (i = position ; position <= map->capacity ;i++){
     map->size++;
     break;
    }
+  if (i == (map->capacity - 1)){
+    i = 0;
+  }
 
  }
 }
