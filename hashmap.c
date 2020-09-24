@@ -88,6 +88,11 @@ void eraseMap(HashMap * map,  char * key) {
     map->size--;
     break;
     }
+    else{
+     map->buckets[i]->key = NULL;
+    map->buckets[i]->value = NULL;
+    map->size--; 
+    }
   }
  }
 
