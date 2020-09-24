@@ -89,6 +89,9 @@ void eraseMap(HashMap * map,  char * key) {
     break;
     }
   }
+  else{
+    break;
+  }
  }
 
 }
