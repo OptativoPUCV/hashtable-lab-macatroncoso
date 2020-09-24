@@ -82,10 +82,12 @@ void eraseMap(HashMap * map,  char * key) {
  int i;
  for (i = iwi;iwi<map->capacity;i++){
   if (map->buckets[i] != NULL){
+    if (is_equal(key, map->buckets[i]->key ) == 1){
     map->buckets[i]->key = NULL;
     map->buckets[i]->value = NULL;
     map->size--;
     break;
+    }
   }
  }
 
