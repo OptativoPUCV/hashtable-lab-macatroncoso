@@ -69,3 +69,9 @@ Thu Sep 24 22:05:15 UTC 2020:
  tests:  8|3
 total_score: 40/70
 8dbae46
+Thu Sep 24 22:05:33 UTC 2020: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  9|3
+total_score: 40/70
+8e5aa50
