@@ -83,7 +83,17 @@ void eraseMap(HashMap * map,  char * key) {
 }
 
 void * searchMap(HashMap * map,  char * key) {   
-
+   int possibly = hash(key,map->capacity);
+   int i;
+   for (i = possibly;possibly < map->capacity;i++){
+     if (map->buckets[i] != NULL){
+      if (is_equal(key, map->buckets[i]->key ) == 1){
+        return  map->buckets[i]->value;
+      }
+    }
+    else
+    break;
+   }
 
     return NULL;
 }
