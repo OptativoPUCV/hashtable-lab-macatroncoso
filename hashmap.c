@@ -78,7 +78,13 @@ return mappsi;
 }
 
 void eraseMap(HashMap * map,  char * key) {    
-
+ int iwi = hash(key,map->capacity);
+ int i;
+ for (i = iwi;iwi<map->capacity;i++){
+  if (map->buckets[i] != NULL){
+    map->buckets[i]->key = NULL;
+  }
+ }
 
 }
 
