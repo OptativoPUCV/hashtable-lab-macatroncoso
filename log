@@ -138,3 +138,9 @@ Sat Sep 26 21:35:13 UTC 2020:
  tests:  12|2
 total_score: 50/70
 3b43cbe
+Sat Sep 26 21:42:31 UTC 2020: 
+ hashmap.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+ tests:  12|2
+total_score: 50/70
+5ad0470

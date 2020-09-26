@@ -116,11 +116,10 @@ void * searchMap(HashMap * map,  char * key) {
 void * firstMap(HashMap * map) {
 int i;
  for (i = 0 ; i < map->capacity;i++){
-  if (map->buckets[i] != NULL){
+  if (map->buckets[i]->value != NULL){
    return map->buckets[i]->value;
   }
  }
- i = 0;
  return NULL;
 }
 
