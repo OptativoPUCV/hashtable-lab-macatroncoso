@@ -127,8 +127,8 @@ int i;
 void * nextMap(HashMap * map) {
 int i;
 
- for (i = map->current; i < map->capacity;i++){
-   i=i+1;
+ for (i = (map->current)+1; i < map->capacity;i++){
+
    if (map->buckets[i]!= NULL ){
    return map->buckets[i]->value;
   }
