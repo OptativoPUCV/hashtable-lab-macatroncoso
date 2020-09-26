@@ -126,11 +126,10 @@ int i;
 
 void * nextMap(HashMap * map) {
 int i;
-int iwi;
+
  for (i = map->current; i < map->capacity;i++){
    if (map->buckets[i]!= NULL ){
-   iwi = map->current + 1;
-   return map->buckets[iwi]->value;
+   return map->buckets[i+1]->value;
   }
  }
     return NULL;

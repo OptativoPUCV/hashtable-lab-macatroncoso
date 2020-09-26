@@ -201,3 +201,8 @@ Sat Sep 26 22:26:46 UTC 2020:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 f6e9de4
+Sat Sep 26 22:30:44 UTC 2020: 
+ hashmap.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+ tests:  0|0
+78d8869
