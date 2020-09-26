@@ -52,7 +52,7 @@ Pair * uwu = createPair(key,value);
 for (i = position ; position <= map->capacity ;i++){
   if ((map->buckets[i] == NULL) || (uwu->key == NULL)){
     map->buckets[i] = uwu;
-
+        map->size++;
     break;
    }
   if (i == (map->capacity - 1)){
