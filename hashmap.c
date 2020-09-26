@@ -120,6 +120,7 @@ int i;
    return map->buckets[i]->value;
   }
  }
+ i = 0;
  return NULL;
 }
 
