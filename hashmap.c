@@ -117,7 +117,7 @@ void * firstMap(HashMap * map) {
 int i;
  for (i = 0 ; i < map->capacity;i++){
    if (map->buckets[i]!= NULL && map->buckets[i]->key != NULL){
-   map->current = i;
+
    return map->buckets[i]->value;
   }
  }
