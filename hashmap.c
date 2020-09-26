@@ -52,7 +52,7 @@ Pair * uwu = createPair(key,value);
 for (i = position ; position <= map->capacity ;i++){
   if ((map->buckets[i] == NULL) || (uwu->key == NULL)){
     map->buckets[i] = uwu;
-        map->size++;
+    map->size++;
     break;
    }
   if (i == (map->capacity - 1)){
@@ -84,7 +84,7 @@ void eraseMap(HashMap * map,  char * key) {
   if (map->buckets[i] != NULL){
     if (is_equal(key, map->buckets[i]->key ) == 1){
     map->buckets[i]->key = NULL;
-    map->buckets[i]->value = NULL;
+
     map->size--;
     break;
     }
