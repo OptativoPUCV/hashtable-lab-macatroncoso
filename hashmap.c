@@ -71,7 +71,7 @@ Pair** newbuckets;
 newbuckets = (Pair **) calloc(newcap, sizeof(Pair *));
 map->buckets = newbuckets;
 int i;
-for (i=0;i<map->capacity;i++){
+for (i=0;i<map->size;i++){
  if ((iwi[i]!=NULL) && (iwi[i]->key != NULL)){
   insertMap( map,  iwi[i]->key,  iwi[i]->value);
  }
