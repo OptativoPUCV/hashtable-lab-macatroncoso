@@ -64,7 +64,6 @@ for (i = position ; position <= map->capacity ;i++){
 
 void enlarge(HashMap * map) {
     enlarge_called = 1; //no borrar (testing purposes)
- 
 Pair ** iwi;
 iwi = map->buckets;
 int newcap = (map->capacity)*2;
@@ -75,9 +74,9 @@ int i;
 for (i=0;i<map->capacity;i++){
  if ((iwi[i]!=NULL) && (iwi[i]->key != NULL)){
   insertMap( map,  iwi[i]->key,  iwi[i]->value);
-  map->size = newcap;
  }
 }
+  map->size = newcap;
 }
 
 
